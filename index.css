@@ -1,0 +1,103 @@
+    
+    *, *::before, *::after{
+    
+        box-sizing: border-box;
+    }
+    
+    body{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Montserrat', 'Sans-Serif';
+         background: URL(ROCK.jpg) no-repeat, center center/cover ;
+        
+        
+                
+    }
+    
+    #gameDiv{
+        border: 1px solid  transparent;
+        color: black;
+        height: 500px;
+        width: 600px;
+     align-items: center;
+     align-content: center;
+     align-self: center;
+     display: flex;
+     flex-direction: column;
+        /* text-align: center; */
+        border-radius: 40px;
+        box-shadow: 0 0 20px rgba(0,0,0, 1);
+        background: rgba(255,255,255,0.9);
+        
+    }
+    
+  /*   #playerText{
+      color:#23ec15;
+      
+  } */
+  
+    
+  /*   #computerText{
+      color:#e2de42;
+  } */
+    
+    #resultText{
+        font-style: italic;
+        font-weight: 500;
+    }
+    
+    
+   
+    
+    p{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .choiceBtn{
+        padding:11px 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        color: white;
+        background-color:#f5a851 ;
+        border: 3px solid  transparent ;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 500;
+        font-family: Arial;
+        transition: color 170ms ease-in-out, opacity 100ms, background 170ms ease-in-out;
+        /* text-align: center; */
+     /* vertical-align: middle; */
+    }
+    
+    .choiceBtn:hover{
+        color: #f5a851;
+        background: transparent;
+        border: 3px solid  #f5a851;
+    }
+    
+      .choiceBtn:active{
+        opacity: .7;
+    }
+    
+    
+    @media only screen and (max-width:600px){
+        #gameDiv{
+            width: 90% ;
+            text-align: center;
+            height: 550px;
+        }
+        body{
+            font-size: 14px;
+        }
+        #computerPoints{
+            margin-bottom: 50px;
+        }
+    }
